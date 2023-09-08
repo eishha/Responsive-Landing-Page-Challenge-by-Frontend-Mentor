@@ -15,7 +15,7 @@
 
 body {
     background-color: var(--Violet);
-    background-image: url('huddle-landing-page-with-single-introductory-section-master/bg-desktop.svg');
+    background-image: url('bg-desktop.svg');
     background-size: 90%;
     color: white;
     font-family: var(--body-font);
