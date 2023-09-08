@@ -1,0 +1,161 @@
+:root {
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+    --footerColor: hsl(228, 45%, 44%);
+    --h-font: 'Poppins', sans-serif;
+    --h-weight: 600;
+    --body-font: 'Open Sans', sans-serif;
+    --body-weight: 400;
+    --Mobile: 375px;
+    --Desktop: 1440px;
+}
+
+
+
+body {
+    background-color: var(--Violet);
+    background-image: url('huddle-landing-page-with-single-introductory-section-master/bg-desktop.svg');
+    background-size: 90%;
+    color: white;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: var(--h-font);
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+
+#logo {
+padding: 2rem 3rem 2rem 3rem;
+
+}
+
+#main{
+    text-align: center;
+}
+#illustration img{
+    width : 100%
+}
+
+#text p{
+    font-size: 1rem;
+    font-weight:lighter;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+
+button{
+    border: 5px;
+    border-style: none;
+    border-radius: 35px ;
+   cursor: pointer;
+    background-color: white;
+    font-size: 1rem;
+    grid-column: 7/11;
+    padding:  0.5rem 4rem;
+    margin: 1rem;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.3);
+
+    
+    
+}
+button a{
+    
+    text-decoration: none;
+    color: var(--Violet);
+    font-family: var(--body-font);
+}
+button:hover{
+    background-color: var(--Soft_Magenta);
+    
+}
+button:hover >a{
+    color: white;
+}
+footer{
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: var(--body-font);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: var(--Soft_Magenta);
+}
+footer ul{
+    padding: 0rem 5rem;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    gap: 1rem;
+
+}
+footer [class*="fa-"]{
+    font-size: 1rem;
+    color: white;
+    background-color: var(--Violet);
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+ footer [class*="fa-facebook"]{
+    color: var(--Violet);
+    background-color: white;
+    padding: 0;
+    font-size: 2rem;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+@media (min-width : 780px){
+    #main {
+        display: grid;
+        grid-template-columns: repeat(10 1fr);
+        padding: 2rem 4rem 0rem 4rem;
+        
+    }
+    #illustration img{
+        width: 660px;
+    }
+    #illustration {
+        padding-right: 1rem;
+        padding-top: 0;
+        grid-column: 2/5;
+    }
+    
+    #text {
+        text-align: left;
+        grid-column: 6/11;
+        font-size: x-large;
+        padding: 2rem 2.5rem 1.5rem 2rem;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+    }
+    button{
+        padding: 1rem 4rem;
+    }
+}
